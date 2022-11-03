@@ -1,0 +1,77 @@
+body {
+    background-image: url(img/whitepattern.jpg);
+}
+
+/* Divs */
+#main-div {
+    min-height: 100vh;
+    height: 100%;
+    padding: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 27px 13px 27px -5px, rgba(0, 0, 0, 0.3) 16px 8px 16px -8px !important;
+}
+#title-div {
+    padding: 5%;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+#about-me-div {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 15%;
+    padding-top: 100px;
+    margin-top: -80px;
+}
+#projects-div {
+    width: 85%;
+    padding-top: 100px;
+    margin-top: -80px;
+}
+#footer {
+    background-color: black;
+    height: 200px;
+}
+
+/* Images */
+#title-img {
+    margin: 5%;
+}
+.project-img {
+    margin-bottom: 2.5%;
+}
+
+.img-hover {
+    transition-duration: .2s;
+}
+.img-hover:hover {
+    transition-duration: .2s;
+    width: 55px;
+    filter:hue-rotate(-50deg)
+}
+
+/* Text */
+#short-text {
+    margin-left: 15%;
+    width: 70%
+}
+
+.project-hover {
+    transition-duration: .4s;
+}
+.project-hover:hover {
+    transition-duration: .4s;
+    font-size: 50px;
+    filter:hue-rotate(100deg)
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgb(3, 3, 3);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0; }
+
