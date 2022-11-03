@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Abel van der Steen</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a id="abelText" class="navbar-brand lead mb-0 fs-3" tag="titlecard" href="#">&lt; A b e l _ v a n _ d e r _ S t e e n &gt;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 10px; margin-right: 10px;" href="#about-me-div">Over Mij</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 10px; margin-right: 10px;" href="#footer">Contacten</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary me-2" style="margin-left: 10px; margin-right: 10px;" type="button" href="#projects-div">Mijn Projecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 10px; margin-right: 10px;" href="index.html"><span class="badge bg-success">EN ver.</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Main Body -->
+  <div class="container shadow-lg text-white" id="main-div" style="background-image: url('img/space_tile.png')">
+
+    <!-- Title Div -->
+    <div class="container" id="title-div">
+      
+      <p class="display-3 text-center"><img src="img/abel.png" class="rounded-circle"></p>
+      <p class="display-3 text-center" id="title"></p>
+
+      <div id="short-text">
+        <p class="lead" id="description"> </p>
+      </div>
+
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about-me-div">
+
+      <p class="display-3 text-center">Over Mij</p>
+      <p class="text-white text-center lead">
+        Om wat eerder was gezegd te herhalen: Hallo! Ik ben Abel van der Steen, ben 17 jaar oud, kom uit Nederland en ben een tweedejaars
+        Sofware Development student. Games, technologie en websites zijn altijd een levenslange passie van mij geweest, en ik heb heel erg
+        zin om eindelijk in de industrie te kunnen werken!
+      </p>
+
+      <p class="display-5 text-center">Wat voor Developer ben ik?</p>
+      <p class="text-center">
+        Terwijl ik wel ervaring heb met front-end web development en een klein beetje met back-end, mijn grootste kracht ligt op het moment in
+        C# / Unity. Natuurlijk is web development ook nog een sterkte van mij! (Dat is toch wat de mensen willen?) Een ding dat je mij waarschijnlijk
+        veg van moet houden is back-end web development... Ik heb een slechte relatie met PHP.
+        <br>
+        <br>
+        Kwa Game Development, de grootste rede dat ik deze opleiding ben begonnen is omdat ik de kennis wou hebben om mijn <em>dream game</em> te maken.
+        Jammer genoeg heb ik nog niet genoeg ideeën voor zo'n spel, en ik heb nog <em>veel</em> te leren voordat ik überhaupt kan <em>denken</em>
+        aan het beginnen van zo'n project. Ik ben klaar om te leren, één stap tegelijk!
+
+        <br>
+        Naast al het code gedoe vind ik dat ik een best creatief persoon ben: ik kan tekenen, een paar instrumenten spelen en muziek produceren!
+        Meer komt daar later nog over, maar het is natuurlijk niet de focus van deze website ;)
+      </p>
+
+    </div>
+
+    <!--Projects Section-->
+    <div id="projects-div" class="mx-auto">
+ 
+      <p class="display-3 text-center">Mijn Projecten</p>
+
+      <br>
+      <div class="container text-center">
+        <div class="row mb-4">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="https://i.imgur.com/XcugcXZ.mp4" width="100%"></div>
+          <div class="col-xl-7 col-sm 12">
+              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#novaflowModal">Novaflow</a></div>
+              <div>
+                <p class="text-secondary">Gemaakt met Unity (C#) + Premiere Pro en Photoshop voor de assets.</p>
+                <p>
+                  Novaflow is een Guitar Hero / Friday Night Funkin' geïnspireerde ritme spel gemaakt door mijzelf voor het SintLucas SHINE project.
+                  Het spel daagde mij uit in beide de code en in Unity zelf, en ik heb er veel van geleerd. Het doel van het SHINE project was om je
+                  voortgang over de loop van het jaar te laten zien, en ik denk dat ik dat doel zeker heb bereikt met <em>Novaflow.</em>
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/ambitionproject.gif" width="100%"></div>
+          <div class="col-xl-7 col-sm 12">
+              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#ambitionModal">Ambitie Project</a></div>
+              <div>
+                <p class="text-secondary">Gemaakt met Unity (C#)</p>
+                <p>
+                  Voor het SintLucas Ambitie Project probeerde ik een JRPG-achtige turn-based battle systeem te maken. Om eerlijk te zijn: ik had 
+                  te veel hooi op de vork genomen! Ik had veel fouten gemaakt in het plannen én programmeren, waardoor ik iets uiteindelijk had 
+                  gemaakt waar ik niet echt trots op ben, maar ik heb er veel van geleerd!
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="#" width="100%"></div>
+          <div class="col-xl-7 col-sm 12">
+              <div><a class="h1 text-primary mb-0 project-hover" href="#">Hobby Projecten</a></div>
+              <div>
+                <p class="text-secondary">Gemaakt met Photoshop, Krita and FL Studio.</p>
+                <p>-</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Novaflow Modal -->
+    <div class="modal fade" id="novaflowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Novaflow</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary">Gemaakt met Unity / C#, waarbij ook Premiere Pro en Photoshop werd gebruikt voor de assets.</p>
+            <p>
+              Dit op Guitar Hero / Friday Night Funkin' geïnspireerde ritmespel, dat ik in mijn eentje heb gemaakt, laat echt zien wat ik heb geleerd tijdens mijn eerste 
+              jaar als software development student, en daagde mij niet alleen uit met programmeren maar ook met Unity zelf. Het spel bevat twee 
+              complete levels (waarvan er één niet op tijd af was voor de deadline) en alle andere dingen die je in een spel kan verwachten zoals een 
+              tutorial scherm en een statistieken scherm aan het einde van elk level. En ja, ik heb toestemming gekregen om de muziek van de levels te gebruiken! 
+              (Ik heb zelfs de medium muziek zelf gemaakt)
+            </p>
+            <p>Het doel van het SHINE-project was om je vooruitgang te laten zien en wat je geleerd hebt om iets te maken waar je trots op kunt zijn, 
+              en dat heb ik zeker gehaald. Ik ben enthousiast om te zien welke projecten de toekomst brengt, en ben 100% klaar om hard te werken en 
+              iets nog beters te bereiken!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Ambition-project Modal -->
+        <div class="modal fade" id="ambitionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ambition-project</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-secondary">Made with Unity / C#</p>
+                <p>“A delayed game will eventually be good, but this quote is really overused stop saying this every time a game is delayed.
+                  What was I saying?” 
+                  – Shigeru Miyamoto</p>
+                <p>Dit was mijn poging om een JRPG gevechtssysteem te maken, en het volstaat te zeggen..: dat ik te veel hooi op de vork heb genomen. 
+                  Ik had slechts een half jaar programmeerervaring en onderschatte enorm hoeveel code in een simpel turn-based gevechtssysteem gaat,
+                  maar het laat goed mijn sterke en zwakke punten zien. Hoewel het op dat moment een praktisch onmogelijke taak was,
+                  zorgde ik er toch voor om vooruit te denken over alle plaatshouders en mechanica, zodat ik er nog steeds iets beters van kon maken 
+                  als het nodig was. De block en flee knoppen werken niet, en er is geen start- of eindscherm, dus hoewel ik een hoop van mijn doelen
+                  had gemist heb ik zeker veel geleerd van mijn fouten.</p>
+                <p>De opdracht stond in het teken van ambitie, en ik denk dat ik met dit basisspel in ieder geval dat doel heb bereikt. Ik hou van turn-based 
+                  RPG's en ik kan zonder twijfel zeggen dat ik dit in de toekomst opnieuw zal proberen, dus ik ben benieuwd naar mijn verbetering 
+                  over de jaren heen!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+  <!--Footer-->
+  <div class="pt-4 mt-auto" id="footer">
+
+    <div class="container text-center text-white">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4 py-4">
+          Met hulp van: Kyan Mensen & Pieter Looijmans
+          <br/><br/>Als de mail knop voor u niet werkt, mijn email is: "abelvdsteen09@gmail.com"
+        </div>
+        <div class="col-6 py-4">
+          <figure class="figure mx-5">
+            <figcaption class="figure-caption text-center">Mijn LinkedIn</figcaption>
+            <a href="https://www.linkedin.com/in/abel-van-der-steen-b752bb253/" target="_blank"><img src="img/linkedin.png" class="figure-img img-fluid img-hover" width="50px"></a>
+          </figure>
+          <figure class="figure mx-5">
+            <figcaption class="figure-caption text-center">Stuur een email</figcaption>
+            <a href="mailto:abelvdsteen09@gmail.com" target="_blank"><img src="img/gmail.png" class="figure-img img-fluid img-hover" width="50px"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="js/myscript.js"></script>
+</html>

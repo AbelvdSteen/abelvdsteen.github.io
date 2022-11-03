@@ -1,5 +1,6 @@
 body {
     background-image: url(img/whitepattern.jpg);
+    overflow-x: hidden !important;
 }
 
 /* Divs */
@@ -12,7 +13,6 @@ body {
 #title-div {
     padding: 5%;
     margin-bottom: 10%;
-    margin-top: 2%;
 }
 #about-me-div {
     padding-left: 8%;
@@ -28,12 +28,11 @@ body {
 }
 #footer {
     background-color: black;
-    height: 200px;
 }
 
 /* Images */
-#title-img {
-    margin: 5%;
+.title-img {
+    
 }
 .project-img {
     margin-bottom: 2.5%;
@@ -74,4 +73,14 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     outline: 0; }
+
+@media (max-width: 450px) /* Phones */
+{
+    #title-div {
+        margin-top: 20% !important;
+    }
+    .title-img {
+        width: 80%;
+    }
+}
 
