@@ -79,6 +79,9 @@ body {
     #title-div {
         margin-top: 20% !important;
     }
+    #title {
+        font-size:xx-large !important;
+    }
     .title-img {
         width: 80%;
     }
