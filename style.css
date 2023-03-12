@@ -1,25 +1,28 @@
+@media (prefers-reduced-motion: no-preference) /* Animations */
+{
+    .load-anim {
+        animation: 1s ease 0s 1 loadPage;
+    }
+    .scroll-anim {
+        animation: 1s ease 0s 1 scrollAnim;
+    }
+}
+
 body {
     background-image: url(img/whitepattern.jpg);
     overflow-x: hidden !important;
 }
 
-/* Divs */
-#main-div {
-    animation: 1s ease 0s 1 loadPage;
-    
+.playFadeIn {
+    /* idk how this works bruh */
+}
+
+/*#region Divs */
+#main-div {    
     min-height: 100vh;
     height: 100%;
     padding: 5%;
-    box-shadow: rgba(50, 50, 93, 0.25) 27px 13px 27px -5px, rgba(0, 0, 0, 0.3) 16px 8px 16px -8px !important;
-}
-
-@keyframes loadPage {
-    0% {
-        transform: translateX(-150%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+    box-shadow: rgba(50, 50, 93, 0.667) 27px 13px 27px -5px, rgba(0, 0, 0, 0.432) 16px 8px 16px -8px !important;
 }
 
 #title-div {
@@ -41,11 +44,9 @@ body {
 #footer {
     background-color: black;
 }
+/*#endregion */
 
-/* Images */
-.title-img {
-    
-}
+/*#region Images */
 .project-img {
     margin-bottom: 2.5%;
 }
@@ -58,8 +59,9 @@ body {
     width: 55px;
     filter:hue-rotate(-50deg)
 }
+/*#endregion */
 
-/* Text */
+/*#region Text */
 #short-text {
     margin-left: 15%;
     width: 70%
@@ -73,6 +75,22 @@ body {
     font-size: 50px;
     filter:hue-rotate(90deg)
 }
+/*#endregion */
+
+/*#region Projects */
+.roka {
+    color:rgb(255, 0, 0) !important;
+}
+.novaflow {
+    color:rgb(179, 0, 255) !important;
+}
+.ambition {
+    color:rgb(0, 255, 132) !important;
+}
+.hobby {
+    color:rgb(221, 255, 0) !important;
+}
+/*#endregion */
 
 .modal-content {
     position: relative;
@@ -99,3 +117,21 @@ body {
     }
 }
 
+@keyframes loadPage {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100;
+    }
+}
+@keyframes scrollAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}

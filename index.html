@@ -40,13 +40,13 @@
   </nav>
 
   <!-- Main Body -->
-  <div class="container shadow-lg text-white" id="main-div" style="background-image: url('img/space_tile.png')">
+  <div class="container shadow-lg text-white load-anim" id="main-div" style="background-image: url('img/space_tile.png')">
 
     <!-- Title Div -->
     <div class="container" id="title-div">
       
-      <p class="display-3 text-center"><img src="img/abel.png" class="title-img"></p>
-      <p class="display-3 text-center" id="title"></p>
+      <p class="display-3 text-center load-anim"><img src="img/abel.png" class="title-img"></p>
+      <p class="display-3 text-center load-anim" id="title"></p>
 
       <div id="short-text">
         <p class="lead" id="description"> </p>
@@ -57,24 +57,22 @@
     <!-- About Me Section -->
     <div id="about-me-div">
 
-      <p class="display-3 text-center">About Me</p>
-      <p class="text-white text-center lead">To repeat what was stated before: Hello! I am Abel van der Steen, am 17 years old, from
-        the Netherlands and am a second-year Software Development student. Games, technology and websites have always been a 
-        life-long passion of mine, and I am wholeheartedly excited to finally be working in the industry!
+      <p class="display-3 text-center">About Me <br/></p>
+      <p class="text-white lead playFadeIn"><br/>I am a second-year software development student at SintLucas. Games, technology and websites have always been a 
+        life-long passion of mine, and I am wholeheartedly excited to finally be working in the industry.
       </p>
 
-      <p class="display-5 text-center">What kind of developer am I?</p>
-      <p class="text-center">While I do have experience with frontend web development and a slight amount with backend, my
-        main strength currently lies in C# / Unity. Of course, web development is still a big strength too! (It's what the people want, right?)
-        one thing you should probably keep me away from is back-end web development... I have a bad relationship with PHP.
+      <p class="display-6">What kind of developer am I?</p>
+      <p>While I do have experience with frontend web development and a slight amount with backend, my
+        main strength currently lies in C# / Unity. I've already made a handful of small games and websites, so be sure to check those out
+        down below.
         <br>
         <br>As for Game Development, the big reason I started this education is because I wanted the knowledge to be able to make my <em>dream game.</em>
         Sadly, I don't have that many ideas for such a game yet, and I still have <em>much</em> more to learn before I want to even think of starting
-        on a project like that. I'm ready to learn, one step at a time!
+        on a project like that. I'm ready to learn though, one step at a time!
         <br>Aside from all the coding stuff, I consider myself a very creative person: I can draw, play a few instrument and produce music!
-        More on that later, but of course it's not the main focus of this website ;)
+        It's not what this portfolio is about of course, but if you're looking for a more all-round developer you got the right guy.
       </p>
-
     </div>
 
     <!--Projects Section-->
@@ -84,48 +82,62 @@
 
       <br>
       <div class="container text-center">
-        <div class="row mb-4">
-          <div class="col-xl-5 col-sm-12 project-img"><img src="img/roka/roka_img.png" width="100%"></div>
+        <div class="row mb-4 playFadeIn">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/roka/roka_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
-              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#rokaModal">Róka</a></div>
+              <div><a class="h1 text-primary mb-0 project-hover roka" href="#" data-bs-toggle="modal" data-bs-target="#rokaModal">Róka</a></div>
               <div>
                 <p class="text-secondary">Made with Unity (C#)</p>
-                <p><em>Róka</em> is a short action platformer game inspired by Metroidvanias like <em>Hollow Knight</em> and <em>Ori</em>,
-                  made together with a group of three art students and one other developer as a group assignment.
+                <p class="text-start"><em>Róka</em> is a short action platformer game inspired by Metroidvanias like <em>Hollow Knight</em> and <em>Ori</em>,
+                  made together with a group of three art students and one other software developer as a group project.
                 </p>
               </div>
           </div>
         </div>
-        <div class="row mb-4">
-          <div class="col-xl-5 col-sm-12 project-img"><img src="img/novaflow_img.png" width="100%"></div>
+        <div class="row mb-4 playFadeIn">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/novaflow/nf_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
-              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#novaflowModal">Novaflow</a></div>
+              <div><a class="h1 text-primary mb-0 project-hover novaflow" href="#" data-bs-toggle="modal" data-bs-target="#novaflowModal">Novaflow</a></div>
               <div>
                 <p class="text-secondary">Made with Unity (C#) + Premiere Pro and Photoshop for the assets.</p>
-                <p><em>Novaflow.</em> is a Guitar Hero / Friday Night Funkin' inspired rhythm game made by myself for SintLucas' SHINE project.
+                <p class="text-start"><em>Novaflow.</em> is a Guitar Hero / Friday Night Funkin' inspired rhythm game made by myself for SintLucas' SHINE project.
                 </p>
               </div>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 playFadeIn">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/gdd/gdd_thumbnail.png" width="100%"></div>
+          <div class="col-xl-7 col-sm 12">
+              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#gddModal">Game Design Doc</a></div>
+              <div>
+                <p class="text-secondary">Made with MS Word and Photoshop</p>
+                <p class="text-start">Cryptid: Revenge is a Game Design Document made for the exam of our Game Design class featuring all subjects
+                  you'd expect to find in a GDD like the MDA and Formal Elements. Yes, I passed the exam.
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/ambitionproject_compressed.gif" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
-              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#ambitionModal">Ambition Project</a></div>
+              <div><a class="h1 text-primary mb-0 project-hover ambition" href="#" data-bs-toggle="modal" data-bs-target="#ambitionModal">Ambition Project</a></div>
               <div>
                 <p class="text-secondary">Made with Unity (C#)</p>
-                <p>For SintLucas' <em>Ambition Project</em>, I attempted to make a JRPG-like turn-based battle system. Suffice to say: I bit off
+                <p class="text-start">For SintLucas' <em>Ambition Project</em>, I attempted to make a JRPG-like turn-based battle system. Suffice to say: I bit off
                   more than I could chew.
                 </p>
               </div>
           </div>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="#" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
-              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#personalModal">Hobbyist Projects</a></div>
+              <div><a class="h1 text-primary mb-0 project-hover hobby" href="#" data-bs-toggle="modal" data-bs-target="#personalModal">Hobbyist Projects</a></div>
               <div>
                 <p class="text-secondary">Made with Photoshop, Krita and FL Studio.</p>
-                <p>-</p>
+                <p class="text-start">Here you'll find all the things aside from my software development career, the things that make me stand out
+                  and give me that extra pazazz you won't find in the others in this field of work.
+                </p>
               </div>
           </div>
         </div>
@@ -139,34 +151,60 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-1 display-5" id="exampleModalLabel">Róka</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <p class="text-secondary">Made with Unity (C#)</p>
-              <p>Róka is an action-platformer game about a small fox exploring a vast cave, encountering a deadly foe along the way.
+              <p>Róka is an action-platformer game about a small fox exploring a vast underground, encountering a deadly foe along the way.
                 The game features both a chase sequence and a boss fight, alongside movement/combat options like wall jumping, shooting
                 with a magic crossbow and summoning a piercing light to act as a melee attack.</p>
               <p class="text-center display-6">My Contributions</p>
               <div class="row">
-                <div class="col-5">
+                <div class="col-sm-5">
                   <img src="img/roka/roka_player.png" width="100%">
                 </div>
-                <div class="col-7">
+                <div class="col-sm-7">
                   <h3>Player</h3>
                   <p>Most of the player-controlled mechanics like moving, (wall-)jumping, attacking, HP and healing were made by me.
                     This also includes the camera-controller and camera boundaries, made a lot easier with the help of Cinemachine.
                   </p>
                 </div>
-                <div class="col-7 text-end">
+                <div class="col-sm-7 text-end">
                   <h3>Level</h3>
                   <p>Using Unity's tileset system, I designed, constructed and decorated the level. I also coded and placed the spike hazards
                     around the level.
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-5">
                   <img src="img/roka/roka_level.png" width="100%">
                 </div>
+                <div class="col-sm-5">
+                  <img src="img/roka/roka_lighting.png" width="100%">
+                </div>
+                <div class="col-sm-7">
+                  <h3>Lighting</h3>
+                  <p>Using Unity's URP systems, I made all the lighting and post-processing effects you see in the game. It's not much, but it really adds
+                    to the atmosphere of the game and it wouldn't be the same without it.
+                  </p>
+                </div>
+                <div class="col-sm-7 text-end">
+                  <h3>Assets</h3>
+                  <p>While I didn't <em>make</em> most the assets for the game, I directed and helped with a lot of it. Most questions about the style and look of everything
+                    came to me, and I was happy to help point the artists in the right direction. Besides this, I also had to import most of the animations and tilesets.
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/roka/roka_assets.png" width="100%">
+                </div>
               </div>
+
+              <div class="mt-4">
+                <p class="h3">
+                  Play it yourself:
+                </p>
+                <iframe src="https://itch.io/embed/1874348?border_width=0&amp;bg_color=210833&amp;fg_color=ffffff&amp;link_color=c15bfa" width="400px" frameborder="0"><a href="https://jonesy-b.itch.io/roka">Róka by Jonesy B</a></iframe>
+              </div>
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
@@ -181,18 +219,83 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Novaflow</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p class="text-secondary">Made with Unity / C#, also using Premiere Pro and Photoshop for the assets.</p>
-            <p>This Guitar Hero / Friday Night Funkin’ inspired rhythm game made on my own really captivates what I learned during my first 
-              year of being a software dev student, challenging me with not just programming but with Unity itself. The game features two 
-              complete levels (one not being finished on time for the deadline) and all other things you might expect in a game like a 
-              tutorial screen and a stats display at the end of each level. And yes, I did get permission to use the levels’ music! 
-              (I even made the medium one myself)</p>
-            <p>The SHINE-project’s purpose was to show your progress and what you learned in order to make something you can be proud of, 
-              and I definitely hit that mark. I’m excited to see what projects the future hold, and am 100% ready to work hard and achieve 
-              something even better!</p>
+            <p class="text-secondary">Made with Unity (C#), Premiere Pro and Photoshop</p>
+              <p><em>Novaflow</em> is a rhythm game similar to games like Friday Night Funkin' and Guitar Hero, made by myself for SintLucas' SHINE project.
+              The goal of SHINE was to create something that's a culmination of what I learned in the first year of Software Development, and I definitely reached that goal.</p>
+              <p class="text-center display-6">Features</p>
+              <div class="row">
+                <div class="col-sm-5">
+                  <img src="img/novaflow/nf_menu.png" width="100%">
+                </div>
+                <div class="col-sm-7">
+                  <h3>Menu</h3>
+                  <p>The game features a fully complete menu, featuring both a level select screen leading to two complete levels and a small tutorial screen.
+                    Both levels' music was used with full permission, the first even being made by myself. Since then, I've already improved my composition skills,
+                    so be sure to check the Hobbyist Projects modal if you're interested.
+                  </p>
+                </div>
+                <div class="col-sm-7 text-end">
+                  <h3>Level</h3>
+                  <p>The game features two complete levels, each carefully made to match the song's beat. You're able to hit and miss each beat, and you get more points
+                    based on how close to the center of the beat you were. There is also a score and max combo counter in the bottom left of the screen to see how you're doing.
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/novaflow/nf_level.png" width="100%">
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/novaflow/nf_pause.png" width="100%">
+                </div>
+                <div class="col-sm-7">
+                  <h3>Pause</h3>
+                  <p>By pressing escape, you can pause the game mid-level and return to the menu using the button. This is completely bug-free, and can be used without
+                    hesitation if you want to stop the game.
+                  </p>
+                </div>
+                <div class="col-sm-7 text-end">
+                  <h3>End Screen</h3>
+                  <p>After finishing the level, you are presented with an overview of how you did and a final score, along with whether you made the "goal" of the level.
+                    This "goal" is pretty redundant, but it's the only objective in the game besides beating someone else's score. In the end screen, you can see exactly
+                    how many notes you missed, hit, how well you hit them, etc.
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <img src="img/novaflow/nf_score.png" width="100%">
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <p class="h3">
+                  Play it yourself:
+                </p>
+                <iframe src="https://itch.io/embed/1960548?border_width=0&amp;bg_color=210833&amp;fg_color=ffffff&amp;link_color=c15bfa" width="100%" frameborder="0"><a href="https://apples05.itch.io/novaflow">Novaflow by Apples05</a></iframe>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GDD Modal -->
+    <div class="modal fade" id="gddModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Game Design Document</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary">Made with MS Word and Photoshop</p>
+            <p><em>Cryptid: Revenge</em> is a game concept created for my Game Design exam. I could choose between three subjects 
+              &#40all being superhero themed&#41 and I chose the second: "Fighting like Spider-man." So, I went to work, and eventually
+              came up with <em>Cryptid: Revenge</em>, a side-scrolling action-platformer inspired by Metroidvanias like <em>Ori and the Will of the Wisps.</em></p>
+            <a class="h1 display-6 mb-0 project-hover" target="_blank" href="https://docs.google.com/document/d/1o-tvwDjS7DTQuxnaBU947poz-gXnogFP/edit?usp=sharing&ouid=114991214705475480139&rtpof=true&sd=true">Read it yourself</a>
+            <br/><br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
@@ -207,11 +310,12 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Ambition-project</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p class="text-secondary">Made with Unity / C#</p>
-                <p>“A delayed game will eventually be good, but this quote is really overused stop saying this every time a game is delayed.
+                <p>“A delayed game will eventually be good, but this quote is really overused stop saying this every time a game is delayed
+                  yet still releases unapologetically bad.
                   What was I saying?” 
                   – Shigeru Miyamoto</p>
                 <p>This was my attempt at making a JRPG Battle System, and suffice to say: I bit off more than I could chew at that point. 
@@ -237,11 +341,61 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Personal Projects</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p class="text-secondary">Made with Photoshop, Krita and FL Studio</p>
-                <p>unfinished oops</p>
+                <p>While these projects aren't directly linked with my software development career, if you're looking for just a slight deviation or
+                  are just interested in my creative capabilities it may still be good to check these out!
+                </p>
+                <p class="text-center display-6">Features</p>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img src="img/novaflow/nf_menu.png" width="100%">
+                  </div>
+                  <div class="col-sm-7">
+                    <h3>Menu</h3>
+                    <p>The game features a fully complete menu, featuring both a level select screen leading to two complete levels and a small tutorial screen.
+                      Both levels' music was used with full permission, the first even being made by myself. Since then, I've already improved my composition skills,
+                      so be sure to check the Hobbyist Projects modal if you're interested.
+                    </p>
+                  </div>
+                  <div class="col-sm-7 text-end">
+                    <h3>Level</h3>
+                    <p>The game features two complete levels, each carefully made to match the song's beat. You're able to hit and miss each beat, and you get more points
+                      based on how close to the center of the beat you were. There is also a score and max combo counter in the bottom left of the screen to see how you're doing.
+                    </p>
+                  </div>
+                  <div class="col-sm-5">
+                    <img src="img/novaflow/nf_level.png" width="100%">
+                  </div>
+                  <div class="col-sm-5">
+                    <img src="img/novaflow/nf_pause.png" width="100%">
+                  </div>
+                  <div class="col-sm-7">
+                    <h3>Pause</h3>
+                    <p>By pressing escape, you can pause the game mid-level and return to the menu using the button. This is completely bug-free, and can be used without
+                      hesitation if you want to stop the game.
+                    </p>
+                  </div>
+                  <div class="col-sm-7 text-end">
+                    <h3>End Screen</h3>
+                    <p>After finishing the level, you are presented with an overview of how you did and a final score, along with whether you made the "goal" of the level.
+                      This "goal" is pretty redundant, but it's the only objective in the game besides beating someone else's score. In the end screen, you can see exactly
+                      how many notes you missed, hit, how well you hit them, etc.
+                    </p>
+                  </div>
+                  <div class="col-sm-5">
+                    <img src="img/novaflow/nf_score.png" width="100%">
+                  </div>
+                </div>
+  
+                <div class="mt-4">
+                  <p class="h3">
+                    Play it yourself:
+                  </p>
+                  <iframe src="https://itch.io/embed/1960548?border_width=0&amp;bg_color=210833&amp;fg_color=ffffff&amp;link_color=c15bfa" width="100%" frameborder="0"><a href="https://apples05.itch.io/novaflow">Novaflow by Apples05</a></iframe>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
@@ -255,12 +409,12 @@
   <!--Footer-->
   <div class="pt-4 mt-auto" id="footer">
 
-    <div class="container text-center text-white">
+    <div class="container text-center text-secondary">
       <div class="row">
         <div class="col-2"></div>
-        <div class="col-4 py-4">
-          With help from: Kyan Mensen & Pieter Looijmans
-          <br/><br/>If the mail button doesn't work for you, my email is "abelvdsteen09@gmail.com"
+        <div class="col-4 text-start">
+          <br/>Email:   abelvdsteen09@gmail.com
+          <br/>LinkedIn: Abel-van-der-Steen
         </div>
         <div class="col-6 py-4">
           <figure class="figure mx-5">
@@ -279,5 +433,5 @@
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<script src="js/myscript.js"></script>
+<script src="js/typewriter.js"></script>
 </html>
