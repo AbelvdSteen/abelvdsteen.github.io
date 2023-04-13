@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(img/whitepattern.jpg);
+    background-image: url('img/space_tile.gif');
     overflow-x: hidden !important;
 }
 
@@ -17,12 +17,29 @@ body {
     /* idk how this works bruh */
 }
 
+::-webkit-scrollbar 
+{
+    width: 12px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb
+{
+    transition-duration: .2s;
+    background: linear-gradient(rgb(43, 0, 75), rgb(23, 0, 106));
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    transition-duration: .2s;
+    background: linear-gradient(rgb(185, 98, 251), rgb(118, 103, 255));
+}
+
 /*#region Divs */
 #main-div {    
     min-height: 100vh;
     height: 100%;
-    padding: 5%;
-    box-shadow: rgba(50, 50, 93, 0.667) 27px 13px 27px -5px, rgba(0, 0, 0, 0.432) 16px 8px 16px -8px !important;
+    padding: 0%;
+    /* box-shadow: rgba(50, 50, 93, 0.667) 27px 13px 27px -5px, rgba(0, 0, 0, 0.432) 16px 8px 16px -8px !important; */
 }
 
 #title-div {

@@ -1,4 +1,9 @@
-const observer = new IntersectionObserver(entries => {
+window.onload = function() {
+  DetectScroll();
+}
+
+function DetectScroll() {
+  const observer = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
       // If the element is visible
@@ -10,3 +15,5 @@ const observer = new IntersectionObserver(entries => {
   });
   
   observer.observe(document.querySelector('playFadeIn'));
+  DetectScroll();
+}

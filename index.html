@@ -40,7 +40,7 @@
   </nav>
 
   <!-- Main Body -->
-  <div class="container shadow-lg text-white load-anim" id="main-div" style="background-image: url('img/space_tile.gif')">
+  <div class="container shadow-lg text-white load-anim" id="main-div">
 
     <!-- Title Div -->
     <div class="container" id="title-div">
@@ -82,7 +82,7 @@
 
       <br>
       <div class="container text-center">
-        <div class="row mb-4 playFadeIn">
+        <div class="row mb-4 playFadeIn scroll-anim">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/roka/roka_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
               <div><a class="h1 text-primary mb-0 project-hover roka" href="#" data-bs-toggle="modal" data-bs-target="#rokaModal">Róka</a></div>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="row mb-4 playFadeIn">
-          <div class="col-xl-5 col-sm-12 project-img"><img src="img/ambitionproject_compressed.gif" width="100%"></div>
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/ambition/ambition_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
               <div><a class="h1 text-primary mb-0 project-hover ambition" href="#" data-bs-toggle="modal" data-bs-target="#ambitionModal">Ambition Project</a></div>
               <div>
@@ -145,73 +145,73 @@
 
     </div>
 
-      <!-- Roka Modal -->
-      <div class="modal fade" id="rokaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-1 display-5" id="exampleModalLabel">Róka</h1>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p class="text-secondary">Made with Unity (C#)</p>
-              <p>Róka is an action-platformer game about a small fox exploring a vast underground, encountering a deadly foe along the way.
-                The game features both a chase sequence and a boss fight, alongside movement/combat options like wall jumping, shooting
-                with a magic crossbow and summoning a piercing light to act as a melee attack.</p>
-              <p class="text-center display-6">My Contributions</p>
-              <div class="row">
-                <div class="col-sm-5">
-                  <img src="img/roka/roka_player.png" width="100%">
-                </div>
-                <div class="col-sm-7">
-                  <h3>Player</h3>
-                  <p>Most of the player-controlled mechanics like moving, (wall-)jumping, attacking, HP and healing were made by me.
-                    This also includes the camera-controller and camera boundaries, made a lot easier with the help of Cinemachine.
-                  </p>
-                </div>
-                <div class="col-sm-7 text-end">
-                  <h3>Level</h3>
-                  <p>Using Unity's tileset system, I designed, constructed and decorated the level. I also coded and placed the spike hazards
-                    around the level.
-                  </p>
-                </div>
-                <div class="col-sm-5">
-                  <img src="img/roka/roka_level.png" width="100%">
-                </div>
-                <div class="col-sm-5">
-                  <img src="img/roka/roka_lighting.png" width="100%">
-                </div>
-                <div class="col-sm-7">
-                  <h3>Lighting</h3>
-                  <p>Using Unity's URP systems, I made all the lighting and post-processing effects you see in the game. It's not much, but it really adds
-                    to the atmosphere of the game and it wouldn't be the same without it.
-                  </p>
-                </div>
-                <div class="col-sm-7 text-end">
-                  <h3>Assets</h3>
-                  <p>While I didn't <em>make</em> most the assets for the game, I directed and helped with a lot of it. Most questions about the style and look of everything
-                    came to me, and I was happy to help point the artists in the right direction. Besides this, I also had to import most of the animations and tilesets.
-                  </p>
-                </div>
-                <div class="col-sm-5">
-                  <img src="img/roka/roka_assets.png" width="100%">
-                </div>
+    <!-- Roka Modal -->
+    <div class="modal fade" id="rokaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-1 display-5" id="exampleModalLabel">Róka</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary">Made with Unity (C#)</p>
+            <p>Róka is an action-platformer game about a small fox exploring a vast underground, encountering a deadly foe along the way.
+              The game features both a chase sequence and a boss fight, alongside movement/combat options like wall jumping, shooting
+              with a magic crossbow and summoning a piercing light to act as a melee attack.</p>
+            <p class="text-center display-6">My Contributions</p>
+            <div class="row">
+              <div class="col-sm-5">
+                <img src="img/roka/roka_player.png" width="100%">
               </div>
-
-              <div class="mt-4">
-                <p class="h3">
-                  Play it yourself:
+              <div class="col-sm-7">
+                <h3>Player</h3>
+                <p>Most of the player-controlled mechanics like moving, (wall-)jumping, attacking, HP and healing were made by me.
+                  This also includes the camera-controller and camera boundaries, made a lot easier with the help of Cinemachine.
                 </p>
-                <iframe src="https://itch.io/embed/1874348?border_width=0&amp;bg_color=210833&amp;fg_color=ffffff&amp;link_color=c15bfa" width="400px" frameborder="0"><a href="https://jonesy-b.itch.io/roka">Róka by Jonesy B</a></iframe>
               </div>
+              <div class="col-sm-7 text-end">
+                <h3>Level</h3>
+                <p>Using Unity's tileset system, I designed, constructed and decorated the level. I also coded and placed the spike hazards
+                  around the level.
+                </p>
+              </div>
+              <div class="col-sm-5">
+                <img src="img/roka/roka_level.png" width="100%">
+              </div>
+              <div class="col-sm-5">
+                <img src="img/roka/roka_lighting.png" width="100%">
+              </div>
+              <div class="col-sm-7">
+                <h3>Lighting</h3>
+                <p>Using Unity's URP systems, I made all the lighting and post-processing effects you see in the game. It's not much, but it really adds
+                  to the atmosphere of the game and it wouldn't be the same without it.
+                </p>
+              </div>
+              <div class="col-sm-7 text-end">
+                <h3>Assets</h3>
+                <p>While I didn't <em>make</em> most the assets for the game, I directed and helped with a lot of it. Most questions about the style and look of everything
+                  came to me, and I was happy to help point the artists in the right direction. Besides this, I also had to import most of the animations and tilesets.
+                </p>
+              </div>
+              <div class="col-sm-5">
+                <img src="img/roka/roka_assets.png" width="100%">
+              </div>
+            </div>
 
+            <div class="mt-4">
+              <p class="h3">
+                Play it yourself:
+              </p>
+              <iframe src="https://itch.io/embed/1874348?border_width=0&amp;bg_color=210833&amp;fg_color=ffffff&amp;link_color=c15bfa" width="400px" frameborder="0"><a href="https://jonesy-b.itch.io/roka">Róka by Jonesy B</a></iframe>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
-            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Novaflow Modal -->
     <div class="modal fade" id="novaflowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -304,54 +304,92 @@
       </div>
     </div>
 
-        <!-- Ambition-project Modal -->
-        <div class="modal fade" id="ambitionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Ambition-project</h1>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p class="text-secondary">Made with Unity / C#</p>
-                <p>“A delayed game will eventually be good, but this quote is really overused stop saying this every time a game is delayed
-                  yet still releases unapologetically bad.
-                  What was I saying?” 
-                  – Shigeru Miyamoto</p>
-                <p>This was my attempt at making a JRPG Battle System, and suffice to say: I bit off more than I could chew at that point. 
-                  I only had half a year of programming experience and greatly underestimated how much coding goes into a simple turn-based 
-                  battle system, but it does a good job at showing my strengths and weaknesses. While being a practically impossible task at 
-                  the time, I still made sure to think ahead on all the placeholders and mechanics so I could still turn it into something 
-                  better if I needed to. The block and flee buttons don’t work, and there is no start- or end-screen, so while I missed a lot 
-                  of goals I wanted to reach, I definitely learned a lot from my mistakes.</p>
-                <p>The assignment was themed around ambition, and I think I at least hit that mark with this basic game. I love turn-based 
-                  RPGs and can say with zero doubt I will attempt this endeavor again in the future, so I’m excited to see my improvement 
-                  over the years!</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
+    <!-- Ambition-project Modal -->
+    <div class="modal fade" id="ambitionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ambition-project</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
+          <div class="modal-body">
+            <p class="text-secondary">Made with Unity / C#</p>
+            <p >“A delayed game will eventually be good, but this quote is really overused stop saying this every time a game is delayed
+              yet still releases unapologetically bad.
+              What was I saying?” 
+              – Shigeru Miyamoto</p>
+            <p>This was my attempt at making a JRPG Battle System, and suffice to say: I bit off more than I could chew at that point. 
+              I only had half a year of programming experience and greatly underestimated how much coding goes into a simple turn-based 
+              battle system, but it does a good job at showing my strengths and weaknesses. While being a practically impossible task at 
+              the time, I still made sure to think ahead on all the placeholders and mechanics so I could still turn it into something 
+              better if I needed to. The block and flee buttons don’t work, and there is no start- or end-screen, so while I missed a lot 
+              of goals I wanted to reach, I definitely learned a lot from my mistakes.</p>
+            <p>The assignment was themed around ambition, and I think I at least hit that mark with this basic game. I love turn-based 
+              RPGs and can say with zero doubt I will attempt this endeavor again in the future, so I’m excited to see my improvement 
+              over the years!</p>
 
-        <!-- Personal projects Modal -->
-        <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Personal Projects</h1>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <p>Under construction!</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
+              <p><br/>You can look at the code and such <a href="https://github.com/AbelvdSteen/AmbitionProject" target="_blank">here</a>, but be warned:
+              it was made with a lot of tutorial following.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Personal projects Modal -->
+    <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Personal Projects</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="display-6">Music</p>
+            <p class="text-secondary">Made in FL Studio. All songs listed are fully original and do not use large samples.</p>
+
+            <p><b>fUNK fIGHT</b> | a short song made for a tower defence game I didn't do much coding on. Funky!</p>
+            <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=10X62a3WBEqvHegQ-Nu0YOrHLTYNio3ZS" type="audio/ogg">
+            Your browser does not support the audio element.
+            </audio>
+
+            <p><br/><b>Siege Victory</b> | Keeping up with the funk theme, here's my attempt at making a friend of mine a theme song. I thought
+            it would be funny one time, and momma didn't raise no quitter!</p>
+            <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=19ZmOD9PoMBRQwbYHYvvc6WYLGCaVVkv7" type="audio/ogg">
+            Your browser does not support the audio element.
+            </audio> 
+
+            <p><br/><b>Wild Whistle</b> | Someone once asked me to make a western-style song because they thought it would be cool, and I said "ok."</p>
+              <audio controls>
+              <source src="https://drive.google.com/uc?export=download&id=1ZZquQ5Hrnhg-uTaWJEF2jg8Mqo2utkYZ" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio> 
+
+              <p><br/><b>Closure</b> | To contrast the other songs, this one is more grim. It represents the feeling of anxiety and regret building up
+              as you come to terms with someone being on their deathbed.</p>
+              <audio controls>
+              <source src="https://drive.google.com/uc?export=download&id=1YLu17zcl3HhErlVPdTfIbVhMhlr8zJ1J" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio> 
+
+              <p><br/><b>Farewell</b> | A direct continuation of 'Closure'. It represents finally coming to terms with the situation, and
+              eventually moving on.</p>
+                <audio controls>
+                <source src="https://drive.google.com/uc?export=download&id=1G4ETParayVsz7CVabsTiqjEdxTkTDGxP" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio> 
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
