@@ -99,13 +99,19 @@ body {
     color:rgb(255, 0, 0) !important;
 }
 .novaflow {
-    color:rgb(179, 0, 255) !important;
+    color:rgb(255, 140, 0) !important;
+}
+.gdd {
+    color: rgb(255, 255, 0) !important;
+}
+.shadesword {
+    color:rgb(81, 255, 0) !important;
 }
 .ambition {
-    color:rgb(0, 255, 132) !important;
+    color:rgb(0, 255, 174) !important;
 }
 .hobby {
-    color:rgb(221, 255, 0) !important;
+    color: rgb(0, 238, 255) !important;
 }
 /*#endregion */
 

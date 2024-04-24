@@ -41,7 +41,7 @@
 
   <!-- Main Body -->
   <div class="container shadow-lg text-white load-anim" id="main-div">
-
+    
     <!-- Title Div -->
     <div class="container" id="title-div">
       
@@ -75,13 +75,14 @@
       </p>
     </div>
 
-    <!--Projects Section-->
+    <!-- Projects Section -->
     <div id="projects-div" class="mx-auto">
  
       <p class="display-3 text-center">My Projects</p>
 
       <br>
       <div class="container text-center">
+        <!-- Roka Section -->
         <div class="row mb-4 playFadeIn scroll-anim">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/roka/roka_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
@@ -94,6 +95,7 @@
               </div>
           </div>
         </div>
+        <!-- Novaflow Section -->
         <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/novaflow/nf_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
@@ -105,10 +107,11 @@
               </div>
           </div>
         </div>
+        <!-- GDD Section -->
         <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/gdd/gdd_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
-              <div><a class="h1 text-primary mb-0 project-hover" href="#" data-bs-toggle="modal" data-bs-target="#gddModal">Game Design Doc</a></div>
+              <div><a class="h1 text-primary mb-0 project-hover gdd" href="#" data-bs-toggle="modal" data-bs-target="#gddModal">Game Design Doc</a></div>
               <div>
                 <p class="text-secondary">Made with MS Word and Photoshop</p>
                 <p class="text-start">Cryptid: Revenge is a Game Design Document made for the exam of our Game Design class featuring all subjects
@@ -117,6 +120,20 @@
               </div>
           </div>
         </div>
+        <!-- ShadeSword Section -->
+        <div class="row mb-4 playFadeIn">
+          <div class="col-xl-5 col-sm-12 project-img"><img src="img/shadesword/ss_thumbnail.jpg" width="100%"></div>
+          <div class="col-xl-7 col-sm 12">
+              <div><a class="h1 text-primary mb-0 project-hover shadesword" href="#" data-bs-toggle="modal" data-bs-target="#ssModal">Shadesword</a></div>
+              <div>
+                <p class="text-secondary">Made with Unity + Photoshop</p>
+                <p class="text-start">Shadesword is a 3D Action-Stealth game where stealth is completely optional! Here I'll be showing what contributions
+                  I gave in this short project, including things like a dash ability and a health bar.
+                </p>
+              </div>
+          </div>
+        </div>
+        <!-- AmbitionProject Section -->
         <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="img/ambition/ambition_thumbnail.png" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
@@ -129,6 +146,7 @@
               </div>
           </div>
         </div>
+        <!-- PersonalProjects Section -->
         <div class="row mb-4 playFadeIn">
           <div class="col-xl-5 col-sm-12 project-img"><img src="#" width="100%"></div>
           <div class="col-xl-7 col-sm 12">
@@ -385,6 +403,58 @@
                 Your browser does not support the audio element.
                 </audio> 
               
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ShadeSword Modal -->
+    <div class="modal fade" id="ssModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-1 display-5" id="exampleModalLabel">ShadeSword</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary">Made with Unity (C#) + Photoshop</p>
+            <p class="text-center display-6">My Contributions</p>
+            <div class="row">
+              <div class="col-sm-5">
+                <img src="img/shadesword/ss_dash.gif" width="100%">
+              </div>
+              <div class="col-sm-7">
+                <h3>Player Dash</h3>
+                <p>My main contribution to the game was the dash mechanic, allowing you to dash across pits, dodge attacks and avoid enemy detection.
+                  It works by casting a RayCast from the feet of the player and smoothly moving them to the hit point (includes max dash distance) using an
+                  AnimationCurve along with Lerp.
+                </p>
+              </div>
+              <div class="col-sm-7 text-end">
+                <h3>Health bar</h3>
+                <p>I designed, sketched and realized the health bar for the game using Photoshop. I also helped with the code and in-Unity settings of the health functionality,
+                  making sure the slider (red bar) worked and displayed properly.
+                </p>
+              </div>
+              <div class="col-sm-5">
+                <img src="img/shadesword/ss_hp.png" width="100%">
+              </div>
+              <div class="col-sm-5">
+                <img src="img/shadesword/ss_level.jpg" width="100%">
+              </div>
+              <div class="col-sm-7">
+                <h3>Level Design</h3>
+                <p>While I didn't realize the level in the game itself, I played a big part in designing it, giving tips and helping with anything I could.
+                  Pictured here is the original sketch for the start of the game, making a short segment forcing the player to use the abilities to their fullest potential.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+            <p class="h3"><br/>You can look at the code and such <a href="https://github.com/KevinPladdet/Agile_Final" target="_blank">here</a>!</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Close</button>
